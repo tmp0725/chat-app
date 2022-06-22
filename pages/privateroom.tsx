@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Toaster } from "react-hot-toast";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { Button } from "@mantine/core";
-import { socket } from "./socket";
+import { socket } from "../lib/socket";
 import { AiFillDelete } from "react-icons/ai";
 import { PrivateMessageSender } from "../types";
-import { day, month, year } from "./date";
+import { day, month, year } from "../date/date";
 
 export default function PrivateRoom(props: {
   username: string;

@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import { Button } from "@mantine/core";
 import { AiFillHome } from "react-icons/ai";
-import { socket } from "./socket";
+import { socket } from "../lib/socket";
 import PrivateRoom from "./privateroom";
 
 export default function JoinPrivateRoom(): JSX.Element {

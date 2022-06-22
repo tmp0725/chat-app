@@ -3,9 +3,9 @@ import { Button } from "@mantine/core";
 import { useState } from "react";
 import { AiFillDelete, AiFillHome } from "react-icons/ai";
 import { RiSendPlane2Fill } from "react-icons/ri";
-import { socket } from "./socket";
+import { socket } from "../lib/socket";
 import { OpenChatData } from "../types";
-import { year, month, day } from "./date";
+import { year, month, day } from "../date/date";
 
 export default function OpenChat(): JSX.Element {
   const [message, setMessage] = useState<string>("");
