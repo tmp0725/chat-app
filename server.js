@@ -11,6 +11,10 @@ const io = new Server(server, {
 
 const PORT = 4000;
 
+app.use("/", (req, res) => {
+  res.json({ message: "connected to server." });
+});
+
 io.on("connection", (socket) => {
   console.log("Successful connection.");
 
